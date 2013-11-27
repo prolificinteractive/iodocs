@@ -1,0 +1,166 @@
+/*
+  font-family for monospace
+*/
+body {
+	font-family: Helvetica Neue, Helvetica, Arial;
+	background: #efefef;
+}
+
+* {
+	-webkit-font-smoothing: antialiased;
+}
+
+h1 {
+	font-weight: 200;
+	color: #222;
+	font-size: 4em;
+}
+
+#controls {
+	display: none;
+}
+
+#controls a {
+	text-decoration: none;
+}
+
+.models .model {
+  border: 1px solid #999;
+  margin: 10px 0 10px 0;
+  background: lightgrey;
+}
+.models .model .label {
+  background-color: #571d1d;
+  font-weight: bold;
+}
+.models .model th, .models .model td {
+  border-bottom: 1px solid #a0a0a0;
+}
+.models .model .title {
+  overflow: hidden;
+}
+.models .model .title:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+.models .model .title:hover span.http-method {
+  text-decoration: none;
+}
+.models .model .title span {
+  margin: 0 10px 0;
+  line-height: 33px;
+  float: left;
+}
+.models .model .title .name {
+  font-size: 16px;
+}
+.models .model .title .label {
+  padding: 0 10px;
+  width: 40px;
+  font-size: 12px;
+  text-align: center;
+  margin: 0;
+  font-family: "Inconsolata", "Monaco", "Consolas", "Bitstream Vera Mono", monospace;
+  color: #fff;
+  line-height: 33px;
+  float: left;
+}
+.models .model table {
+  margin: 15px;
+}
+.models .model tr.required {
+  font-weight: bold;
+}
+.models .model th {
+  font-weight: bold;
+  text-align: left;
+}
+.models .model th, .models .model td {
+  padding: 5px 10px;
+  vertical-align: middle;
+}
+.models .model td, .models .model pre {
+  font-family: "Inconsolata", "Monaco", "Consolas", "Bitstream Vera Mono", monospace;
+}
+.models .model h2 {
+  margin-top: 15px;
+  margin-bottom: 3px;
+}
+.models .model pre {
+  font-size: 12px;
+  overflow: auto;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.models .model pre.response {
+  max-height: 500px;
+}
+.models .model pre.error {
+  background-color: rgba(255, 66, 66, 0.2);
+}
+.models .model .desccol {
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  width: 100%;
+}
+
+.endpoint {
+	margin: 10px 0;
+	border: 1px solid #ccc;
+	padding: 5px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.1);
+}
+
+.endpoint h3.title .name {
+	font-size: 1.75em;
+}
+
+.endpoint .endpointdetails .description {
+	font-size: 1.4em;
+	color: #999;
+}
+
+.endpoint .description ul {
+  list-style-type: disc;
+  padding-left: 40px;
+}
+.endpoint .description li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  list-style-type: disc;
+}
+.endpoint .description p {
+  margin-bottom: 14px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 14px;
+}
+.endpoint .endpointdetails {
+  padding: 10px 10px 20px 10px;
+  /*
+  .description {
+    padding-bottom: 10px;
+  }
+  */
+}
+.endpoint .method .description {
+  padding: 10px 10px 20px 10px;
+}
+
+.methods.hidden {
+	display: block;
+}
+
+.methods .method,
+.methods .method .title,
+.methods .method .title .http-method {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-o-border-radius: 0;
+	border-radius: 0;
+}
+
+.actions {
+	display: none;
+}

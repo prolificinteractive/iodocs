@@ -522,14 +522,6 @@ li {
   float: left;
 }
 
-.method .title .name span {
-  float: none;
-}
-
-.method .title .uri span {
-  float: none;
-}
-
 .method .title .uri {
   color: #777;
 }
@@ -745,22 +737,6 @@ li {
   zoom: 1;
 }
 
-.foo{
-  color:red;
-}
-
-strong{
-  font-weight: bold;
-}
-
-em {
-  font-style:italic;
-}
-
-underline {
-  text-decoration:underline
-}
-
 dl {
   display: block;
   margin-bottom: 10px;
@@ -834,23 +810,4 @@ dd {
   h2, h3 {
     page-break-after: avoid;
   }
-}
-
-/* Bookmark css */
-/* http://blog.avtex.com/2012/01/27/how-to-make-an-entire-div-clickable-with-css/ */
-div.clickable { /* Containing div must have a position value */
-    position:relative;
-}
-
-div.clickable a {
-    position:absolute;
-    width:100%;
-    height:100%;
-    top:0;
-    left:0;
-    text-decoration:none; /* Makes sure the link   doesn't get underlined */
-    z-index:10; /* raises anchor tag above everything else in div */
-    background-color:white; /*workaround to make clickable in IE */
-    opacity: 0; /*workaround to make clickable in IE */
-    filter: alpha(opacity=1); /*workaround to make clickable in IE */
 }
